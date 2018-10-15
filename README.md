@@ -1,6 +1,6 @@
-# cura-build
+# continuum-build
 
-This repository contains build scripts used to build Cura and all dependencies from scratch.
+This repository contains build scripts used to build Continuum and all dependencies from scratch.
 
 The build has a number of dependencies. Ideally, these dependencies should be installed by the [cura-build-environment](https://github.com/Ultimaker/cura-build-environment) repository. Even with cura-build-environment though, some things may still be missing from your system that we haven't thought of.
 
@@ -12,8 +12,8 @@ The build has a number of dependencies. Ideally, these dependencies should be in
 4. Because Fortran is necessary: *brew install gcc*
 5. Run these commands:
 ```shell
-git clone git@github.com:Ultimaker/cura-build.git
-cd cura-build
+git clone git@github.com:Passador99/continuum-build.git
+cd continuum-build
 mkdir build
 cd build
 cmake ..
@@ -73,8 +73,8 @@ For 64-bit builds:
 
 ```shell
 REM 32-bit
-git clone git@github.com:Ultimaker/cura-build.git
-cd cura-build
+git clone git@github.com:Passador99/continuum-build.git
+cd continuum-build
 mkdir build
 cd build
 ..\env_win32.bat
@@ -85,8 +85,8 @@ mingw32-make package
 
 ```shell
 REM 64-bit
-git clone git@github.com:Ultimaker/cura-build.git
-cd cura-build
+git clone git@github.com:Passador99/continuum-build.git
+cd continuum-build
 mkdir build
 cd build
 ..\env_win64.bat
@@ -95,17 +95,17 @@ mingw32-make
 mingw32-make package
 ```
 
-Before make package - copy arduino to cura-build/
+Before make package - copy arduino to continuum-build/
 
 ## Ubuntu/Linux
 
-cura-build can build AppImage packages of Cura.
+continuum-build can build AppImage packages of Cura.
 
 To build, make sure these dependencies are installed, then clone this repository and run the following commands from your clone:
 
 ```shell
-git clone http://github.com/Ultimaker/cura-build.git
-cd cura-build
+git clone http://github.com/Passador99/continuum-build.git
+cd continuum-build
 ```
 
 ```shell
@@ -118,7 +118,7 @@ make package
 
 ## CentOS/Linux
 
-cura-build can build CentOS/RHEL packages of Cura.
+continuum-build can build CentOS/RHEL packages of Cura.
 
 Dependencies:
 
@@ -151,8 +151,8 @@ Alternative method for installing python at: https://edwards.sdsu.edu/research/i
 Make sure, that the PYTHONPATH can find dist-packages. 
 
 ```shell
-git clone http://github.com/Ultimaker/cura-build.git
-cd cura-build
+git clone http://github.com/Passador99/continuum-build.git
+cd continuum-build
 ```
 
 ```shell
